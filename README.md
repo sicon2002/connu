@@ -1,4 +1,4 @@
-This is an addon starter template for the [Ionic Framework](http://ionicframework.com/).
+ConnectU.....
 
 ## How to use this template
 
