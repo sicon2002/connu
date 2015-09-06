@@ -43,16 +43,15 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+  .controller('MyGardenCtrl', function($scope, MemberService) {
+
+      MemberService.get(1).success(function(response){
+        console.log(response);
+        $scope.playlists = response;
+      });
 })
 
+
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+
 });
