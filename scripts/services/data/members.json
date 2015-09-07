@@ -1,8 +1,8 @@
 [
-  { "title": "刘德华", "id": "1" },
-  { "title": "张学友", "id": "2" },
-  { "title": "李健", "id": "3" },
-  { "title": "帕尔哈提", "id": "4" },
-  { "title": "周杰伦", "id": "5" },
-  { "title": "吴三桂", "id": "6" }
+  { "title": "刘德华", "id": "1", "image":"my/av1.jpg" },
+  { "title": "张学友", "id": "2", "image":"my/av1.jpg" },
+  { "title": "李健", "id": "3", "image":"my/av1.jpg" },
+  { "title": "帕尔哈提", "id": "4", "image":"my/av1.jpg" },
+  { "title": "周杰伦", "id": "5", "image":"my/av1.jpg" },
+  { "title": "吴三桂", "id": "6", "image":"my/av1.jpg" }
 ]

@@ -23,32 +23,16 @@
       </div>
       <div class="item item-avatar">
         <img src="images/my/av1.jpg">
-
         <h2>蜡笔请小心</h2>
-
         <p>一见你就有好心情......</p>
       </div>
     </div>
-    <div class="list card myplants">
-      <div class="row">
-        <div class="col">
-          <img src="images/my/av1.jpg"></div>
-        <div class="col">
-          <img src="images/my/av1.jpg"></div>
-        <div class="col">
-          <img src="images/my/av1.jpg"></div>
-        <div class="col">
-          <img src="images/my/av1.jpg"></div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="images/my/av1.jpg"></div>
-        <div class="col">
-          <img src="images/my/av1.jpg"></div>
-        <div class="col">
-          <img src="images/my/av1.jpg"></div>
-        <div class="col">
-          <img src="images/my/av1.jpg"></div>
+    <div class="row myplants" ng-repeat="row in myplants | inSlicesOf:4">
+      <div class="col col-25" ng-repeat="item in row">
+        <a href="#/app/plants/{{item.id}}">
+          <img ng-src="images/{{item.image}}">
+          {{item.title}}
+        </a>
       </div>
     </div>
   </ion-content>
