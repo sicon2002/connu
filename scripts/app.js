@@ -33,26 +33,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'AppCtrl'
       })
 
-      .state('bbc', {
-        url: '/bbc',
-        templateUrl: 'templates/bbc.html',
-        controller: 'BbcCtrl'
-      })
-
-      .state('app.search', {
-        url: '/search',
+      .state('app.diary', {
+        url: '/diary',
         views: {
           'menuContent': {
-            templateUrl: 'templates/search.html'
+            templateUrl: 'templates/diary.html'
           }
         }
       })
 
-      .state('app.browse', {
-        url: '/browse',
+      .state('app.plantlibs', {
+        url: '/plantlibs',
         views: {
           'menuContent': {
-            templateUrl: 'templates/browse.html'
+            templateUrl: 'templates/plantlibs.html'
           }
         }
       })
@@ -66,7 +60,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       })
 
-      .state('app.single', {
+      .state('app.plants', {
         url: '/plants/:playlistId',
         views: {
           'menuContent': {

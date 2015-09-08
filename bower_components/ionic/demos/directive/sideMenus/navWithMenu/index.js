@@ -17,7 +17,7 @@ angular.module('navWithMenu', ['ionic'])
       url: "/search",
       views: {
         'menuContent' :{
-          templateUrl: "templates/search.html"
+          templateUrl: "../../../../../../templates/diary.html"
         }
       }
     })
@@ -26,7 +26,7 @@ angular.module('navWithMenu', ['ionic'])
       url: "/browse",
       views: {
         'menuContent' :{
-          templateUrl: "templates/browse.html"
+          templateUrl: "../../../../../../templates/plantlibs.html"
         }
       }
     })
