@@ -71,6 +71,8 @@ angular.module('starter.controllers', [])
         $scope.closeLogin();
       }, 1000);
     };
+
+    $scope.loginData={"username":"sicon","password":"pwd"};
   })
 
   .controller('MyGardenCtrl', function ($scope, MemberService) {
@@ -79,6 +81,10 @@ angular.module('starter.controllers', [])
       console.log(response);
       $scope.myplants = response;
     });
+
+    $scope.loginData = {"username":"sicon","password":"pwd"};
+    $scope.searchData = {"kw":"pls input kw"};
+    console.log("after init.");
   })
 
 
