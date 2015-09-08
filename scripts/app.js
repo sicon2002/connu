@@ -29,7 +29,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       .state('app', {
         url: '/app',
         abstract: true,
-        templateUrl: 'templates/menu.html',
+        templateUrl: 'templates/common/menu.html',
         controller: 'AppCtrl'
       })
 
@@ -37,7 +37,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         url: '/diary',
         views: {
           'menuContent': {
-            templateUrl: 'templates/diary.html'
+            templateUrl: 'templates/diary/diary.html'
           }
         }
       })
@@ -46,7 +46,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         url: '/plantlibs',
         views: {
           'menuContent': {
-            templateUrl: 'templates/plantlibs.html'
+            templateUrl: 'templates/plantlibs/plantlibs.html'
           }
         }
       })
@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         url: '/mygarden',
         views: {
           'menuContent': {
-            templateUrl: 'templates/mygarden.html',
+            templateUrl: 'templates/mygarden/mygarden.html',
             controller: 'MyGardenCtrl'
           }
         }
@@ -64,7 +64,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         url: '/plants/:playlistId',
         views: {
           'menuContent': {
-            templateUrl: 'templates/plant.html',
+            templateUrl: 'templates/mygarden/plant.html',
             controller: 'PlantCtrl'
           }
         }

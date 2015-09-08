@@ -6,8 +6,9 @@ angular.module('starter.controllers', [])
   ['$rootScope',
     function ($rootScope) {
       var makeSlices = function (items, count) {
-        if (!count)
+        if (!count){
           count = 3;
+        }
 
         if (!angular.isArray(items) && !angular.isString(items)) return items;
 
@@ -45,7 +46,7 @@ angular.module('starter.controllers', [])
     $scope.loginData = {};
 
     // Create the login modal that we will use later
-    $ionicModal.fromTemplateUrl('templates/login.html', {
+    $ionicModal.fromTemplateUrl('templates/my/login.html', {
       scope: $scope
     }).then(function (modal) {
       $scope.modal = modal;
