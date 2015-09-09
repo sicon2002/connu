@@ -6,7 +6,7 @@ angular.module('starter.controllers', [])
   ['$rootScope',
     function ($rootScope) {
       var makeSlices = function (items, count) {
-        if (!count){
+        if (!count) {
           count = 3;
         }
 
@@ -73,22 +73,36 @@ angular.module('starter.controllers', [])
       }, 1000);
     };
 
-    $scope.loginData={"username":"sicon","password":"pwd"};
+    $scope.loginData = {"username": "sicon", "password": "pwd"};
   })
 
-  .controller('MyGardenCtrl', function ($scope, MemberService) {
+  .controller('MyGardenCtrl', function ($scope, $state, MemberService) {
 
     MemberService.get(1).success(function (response) {
       console.log(response);
       $scope.myplants = response;
     });
 
-    $scope.loginData = {"username":"sicon","password":"pwd"};
-    $scope.searchData = {"kw":"pls input kw"};
+    $scope.loginData = {"username": "sicon", "password": "pwd"};
+    $scope.searchData = {"kw": "pls input kw"};
     console.log("after init.");
+
+    $scope.gotoaddnew = function () {
+      console.log("before go to plant add");
+      $state.go("app.plantadd", {}, {reload: true});
+      console.log("after go to plant add");
+    };
   })
 
 
   .controller('PlantCtrl', function ($scope, $stateParams) {
+    console.log("you are inside plant ctrl");
+  })
 
+  .controller('PlantAddCtrl', function ($scope) {
+    $scope.Plant = {
+      'Name': '带斑点的小花',
+      'CtgId':102,
+      'CtgName':'百合科－芦荟属－多叶芦荟'
+    };
   });

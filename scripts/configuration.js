@@ -2,6 +2,6 @@
 
  angular.module('config', [])
 
-.constant('ENV', {name:'production',apiEndpoint:'http://api.yoursite.com/'})
+.constant('ENV', {name:'production',apiEndpoint:'http://api.connu.com/'})
 
 ;

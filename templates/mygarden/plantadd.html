@@ -1,0 +1,24 @@
+<ion-view view-title="添加植物">
+  <ion-content>
+    <form ng-submit="addPlant()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">名称：</span>
+          <input type="text" ng-model="Plant.Name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">类型：</span>
+          <input type="text" ng-model="Plant.CtgId" ng-hide="true">
+          <input type="text" ng-model="Plant.CtgName" ng-disabled="true">
+        </label>
+        <label>
+          <span class="input-label">图片：</span>
+          <span>选择图片</span>
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">添加</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

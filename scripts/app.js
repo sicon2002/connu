@@ -59,7 +59,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           }
         }
       })
-
+      .state('app.plantadd', {
+        url: '/plantadd',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/mygarden/plantadd.html',
+            controller:'PlantAddCtrl'
+          }
+        }
+      })
       .state('app.plants', {
         url: '/plants/:playlistId',
         views: {
