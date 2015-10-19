@@ -12,28 +12,25 @@
         <i class="icon ion-ios-search"></i>
         <input type="search" placeholder="Search" ng-model="searchData.kw">
       </label>
-      <button class="button button-clear">
-        Search
-      </button>
     </div>
-    <div class="list card">
-      <div class="item item-body">
-        <img class="full-image" src="images/my/f1.jpeg">
-      </div>
-      <div class="item item-avatar">
-        <img src="images/my/av1.jpg">
-
-        <h2>蜡笔请小心</h2>
-
-        <p>一见你就有好心情......</p>
-      </div>
+    <div>
+      <img class="mainprofile" src="images/my/f1.jpeg">
     </div>
-    <div class="row myplants" ng-repeat="row in myplants | inSlicesOf:4">
-      <div class="col col-25" ng-repeat="item in row">
-        <a href="#/app/plants/{{item.id}}">
-          <img ng-src="images/{{item.image}}">
-          {{item.title}}
-        </a>
+    <div class="row myplants" ng-repeat="row in myplants | inSlicesOf:2">
+      <div class="col col-50" ng-repeat="item in row">
+        <div>
+          <a href="#/app/plants/{{item.id}}">
+            <img ng-src="images/{{item.image}}">
+          </a>
+        </div>
+        <div>
+          <div class="sleft">
+            {{item.title}}
+          </div>
+          <div class="sright">
+            <i class="icon ion-edit"></i>
+          </div>
+        </div>
       </div>
     </div>
   </ion-content>

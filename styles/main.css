@@ -1,1 +1,4 @@
 /* Your application styles go here */
+html, body {
+  background-color: #ffbbb;
+}
