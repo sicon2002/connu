@@ -1,22 +1,74 @@
 /* Empty. Add your own CSS if you like */
 
-.mainprofile {
-  width:100%;
-  height:150px;
+/* new ui goes here.*/
+html {
+  font-size: 100%;
 }
 
-.myplants img{
-  width:100%;
-  height:100px;
-  border-radius: 0px;
+body {
+  font-size: 1em;
 }
 
-.myplants .col A{
+.main-color {
+  color:#f9bdc9;
+}
+
+.mg-center-bg{
+  width: 100%;
+  height:9em;
+  background-image: url(../images/index-bg.jpg);
+}
+
+.mg-center-bg div{
   text-align: center;
-  display: block;
-  color: #000000;
-  TEXT-DECORATION: none
+  padding:0.1em;
+}
+.mg-center-bg img{
+  margin-top:0.75em;
+  width: 5em;
+  border-radius: 2.5em;
+}
+.mg-center-bg .mg-center-name{
+  color:#333333;
+  font-size:1em;
+}
+.mg-center-bg .mg-center-id{
+  color:#666666;
+  font-size:0.75em;
 }
 
-.sleft {float:left;}
-.sright {float:right;}
+.mg-plant-list img{
+  width:100%;
+  height:7em;
+  border-radius: 0.15em;
+}
+
+.mg-plant-list .index-p-name{
+  background-color:white;
+}
+.mg-plant-list .index-p-name div{
+  font-size:0.98em;
+}
+.mg-plant-list .mg-plant-block{
+}
+.mg-plant-list .mg-plant-cell{
+  border: solid 1px #dddddd;
+  border-radius: 0.2em;
+  padding-bottom: 1.5em;
+}
+
+.mg-plant-list .index-p-left{
+  float:left;
+  padding:0.05em 0.1em 0.05em 0.3em;
+}
+.mg-plant-list .index-p-right{
+  float:right;
+  padding:0.05em 0.5em 0.05em 0.1em;
+}
+
+.mg-plant-list .index-p-right i{
+
+}
+.card-box{
+  margin:10px;
+}
