@@ -2,15 +2,11 @@
   <ion-nav-title>
     我的智慧花园
   </ion-nav-title>
-  <ion-nav-buttons side="right">
-    <button class="button button-icon button-clear ion-ios-plus-outline" ng-click="gotoaddnew()">
-    </button>
-  </ion-nav-buttons>
   <ion-content class="stable-bg">
     <div class="bar bar-header item-input-inset royal-bg">
       <label class="item-input-wrapper">
         <i class="icon ion-ios-search"></i>
-        <input type="search" placeholder="Search" ng-model="searchData.kw">
+        <input type="search" placeholder="把关键字放在这里搜搜看" ng-model="searchData.kw">
       </label>
     </div>
     <div>
@@ -42,10 +38,13 @@
       </div>
     </div>
     <div class="card-box stable-bg">
-      <a class="button light-bg button-block">
+      <a class="button light-bg button-block" ng-click="addnew()">
         <i class="ion-ios-plus-outline"></i>
         添加新植物
       </a>
+    </div>
+    <div class="home-icon">
+      <img src="images/home.png">
     </div>
   </ion-content>
 </ion-view>

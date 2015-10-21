@@ -84,12 +84,12 @@ angular.module('starter.controllers', [])
     });
 
     $scope.loginData = {"username": "sicon", "password": "pwd"};
-    $scope.searchData = {"kw": "pls input kw"};
+    $scope.searchData = {"kw": ""};
     console.log("after init.");
 
-    $scope.gotoaddnew = function () {
+    $scope.addnew = function () {
       console.log("before go to plant add");
-      $state.go("app.plantadd", {}, {reload: true});
+      $state.go("app.plantadd", {}, {reload: false});
       console.log("after go to plant add");
     };
   })

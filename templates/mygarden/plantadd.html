@@ -1,56 +1,86 @@
-<ion-view view-title="添加植物">
+<ion-view>
+  <ion-nav-title>
+    添加植物
+  </ion-nav-title>
+  <ion-nav-buttons side="right">
+    <button class="button">
+      完成
+    </button>
+  </ion-nav-buttons>
   <ion-content>
     <form ng-submit="addPlant()">
       <div class="list">
-        <label class="item item-input">
-          <span class="input-label">名称：</span>
-          <input type="text" ng-model="Plant.Name">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">类型：</span>
-          <input type="text" ng-model="Plant.CtgId" ng-hide="true">
-          <input type="text" ng-model="Plant.CtgName" ng-disabled="true">
-        </label>
-        <div class="item item-button-right">
-          <span class="input-label">类型：</span>
-          <input type="text" ng-model="Plant.CtgId" ng-hide="true">
-          {{Plant.CtgName}}
-          <button class="button button-positive">
-            <i class="icon ion-ios-telephone"></i>
-          </button>
+        <div class="item sc-item-two-c">
+          <div class="sc-left">植物昵称</div>
+          <div class="sc-right">
+            <input type="text" ng-model="Plant.Name">
+          </div>
         </div>
-        <a class="item item-thumbnail-right" href="#">
-          <img src="images/my/av1.jpg">
-          <h2>Pretty Hate Machine</h2>
-          <p>Nine Inch Nails</p>
-        </a>
-        <a class="item item-icon-left" href="#">
-          <i class="icon ion-email"></i>
-          Check mail
-        </a>
+        <div class="item sc-item-two-c">
+          <div class="sc-left">植物种类</div>
+          <div class="sc-right">
+            <div class="item-icon-right">
+              <input type="text" ng-model="Plant.CtgId" ng-hide="true">
+              <input type="text" ng-model="Plant.CtgName" ng-disabled="true">
+              <i class="icon royal ion-ios-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item sc-item-two-c">
+          <div class="sc-left">植物图片</div>
+          <div class="sc-right">
+            <img src="images/my/av1.jpg" class="sc-thumbnail">
+          </div>
+        </div>
+        <div class="item sc-item-two-c">
+          <div class="sc-left">我的保姆</div>
+          <div class="sc-right">
+            <div class="sc-block-pink">连接智能设备</div>
+          </div>
+        </div>
 
-        <a class="item item-icon-left item-icon-right" href="#">
-          <i class="icon ion-chatbubble-working"></i>
-          Call Ma
-          <i class="icon ion-ios-telephone-outline"></i>
-        </a>
+        <div class="item sc-item-two-c">
+          <div class="sc-left">植物环境</div>
 
-        <a class="item item-icon-left" href="#">
-          Record album
-          <span class="item-note">
-            Grammy
-          </span>
-        </a>
+          <div class="sc-right">
+            <div class="plant-add-evn">
+              <div class="sm-left">
+                <ion-checkbox ng-model="pizza.a" class="item-input-inset checkbox-royal royal">
+                  室内
+                </ion-checkbox>
+              </div>
+              <div class="item-checkbox  item-button-right sm-right">
+                <ion-checkbox ng-model="pizza.b" class="item-input-inset checkbox-royal royal">
+                  室外
+                </ion-checkbox>
+              </div>
+            </div>
+            <div class="plant-add-evn">
+              <div class="sm-left">
+                <ion-checkbox ng-model="pizza.c" class="item-input-inset checkbox-royal royal">
+                  花盆
+                </ion-checkbox>
+              </div>
+              <div class="item-checkbox  item-button-right sm-right">
+                <ion-checkbox ng-model="pizza.d" class="item-input-inset checkbox-royal royal">
+                  土壤
+                </ion-checkbox>
+              </div>
+            </div>
+          </div>
 
-        <a class="item item-icon-left" href="#">
-          <i class="icon ion-person-stalker"></i>
-          Friends
-          <span class="badge badge-assertive">0</span>
-        </a>
+        </div>
+        <div class="item sc-item-two-c">
+          <div class="sc-left">当前位置</div>
+          <div class="sc-right">
 
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">添加</button>
-        </label>
+            <div class="sc-grey">
+              <i class="icon ion-ios-location sc-icon-font"></i>
+              定位当前位置
+              </divsc-block-pink>
+            </div>
+          </div>
+        </div>
       </div>
     </form>
   </ion-content>
