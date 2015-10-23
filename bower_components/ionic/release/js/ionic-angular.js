@@ -2752,12 +2752,12 @@ IonicModule
          *   Close action sheet = 300
          *   Dismiss popup = 400
          *   Dismiss loading overlay = 500
-         * 
+         *
          * Your back button action will override each of the above actions
          * whose priority is less than the priority you provide. For example,
          * an action assigned a priority of 101 will override the 'return to
          * previous view' action, but not any of the other actions.
-         * 
+         *
          * @param {function} callback Called when the back button is pressed,
          * if this listener is the highest priority.
          * @param {number} priority Only the highest priority will execute.
@@ -4166,7 +4166,7 @@ IonicModule
  *         views: {
  *           'home-tab': {
  *             prefetchTemplate: false,
- *             templateUrl: "tabs-templates/home.html",
+ *             templateUrl: "tabs-templates/home-menu.html",
  *             controller: 'HomeTabCtrl'
  *           }
  *         }
@@ -11256,7 +11256,7 @@ IonicModule
  *   $stateProvider
  *   .state('index', {
  *     url: '/',
- *     templateUrl: 'home.html'
+ *     templateUrl: 'home-menu.html'
  *   })
  *   .state('music', {
  *     url: '/music',
@@ -11265,11 +11265,11 @@ IonicModule
  * });
  * ```
  * Then on app start, $stateProvider will look at the url, see it matches the index state,
- * and then try to load home.html into the `<ion-nav-view>`.
+ * and then try to load home-menu.html into the `<ion-nav-view>`.
  *
  * Pages are loaded by the URLs given. One simple way to create templates in Angular is to put
  * them directly into your HTML file and use the `<script type="text/ng-template">` syntax.
- * So here is one way to put home.html into our app:
+ * So here is one way to put home-menu.html into our app:
  *
  * ```html
  * <script id="home" type="text/ng-template">

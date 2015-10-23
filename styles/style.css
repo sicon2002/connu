@@ -16,23 +16,26 @@ body {
 .sm-left {
   float: left;
 }
-.sm-right{
-}
-.sm-checkbox-small{
-  padding:0;
-  margin:0;
-  height:auto;
-  font-size:1em;
+
+.sm-right {
 }
 
-.sc-border-none{
-  border:none;
+.sm-checkbox-small {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  font-size: 1em;
+}
+
+.sc-border-none {
+  border: none;
 }
 
 .mg-center-bg {
   width: 100%;
   height: 9em;
   background-image: url(../images/home_bg_03.png);
+  background-size: 100% 100%;
 }
 
 .mg-center-bg div {
@@ -96,37 +99,51 @@ body {
   margin: 10px;
 }
 
-.homemenu{
+.homemenu {
   position: fixed;
   top: 25.4em;
   right: 0.5em;
 
-  border:solid 1px #ff0000;
+  border: solid 1px #ff0000;
 }
 
-.homemenu div{
-  border:solid 1px #ff0ff0;
+.homemenu div {
+  #border: solid 1px #ff0ff0;
 }
+
 .homemenu .home-icon {
-  position: relative;
-  top:0em;
-  right:0em;
+  position: absolute;
+  top: 0em;
+  right: 0em;
 }
 
 .homemenu .home-icon img {
-  width: 4em;
+  width: 5em;
 }
 
-.homemenu .home-icon-item{
-  position: relative;
+.homemenu .home-icon-item {
+  position: absolute;
+  display: none;
+  top: 0em;
+  right: 0em;
+  #border: solid 1px #330033;
+  font-size: 0.95em;
+  width: 5em;
+  height: 5em;
+  background: url(../images/menu-item.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding:1.1em 1.3em;
+  opacity: 0;
 }
 
 .homemenu .home-icon-item img {
   width: 3em;
 }
+
 /* plant add */
 .plant-add-evn {
-  border:none;
+  border: none;
 }
 
 .plant-add-evn div {
@@ -137,41 +154,44 @@ body {
   width: 100%;
   margin: 0 0 0.1em 0;
   padding: 1em 0.6em;
-  border-top:none;
+  border-top: none;
   border-bottom: solid 0.07em #f9bdc9;
 }
 
 .sc-item-two-c .sc-left {
-  margin-top:0em;
+  margin-top: 0em;
   width: 5em;
-  float:left;
+  float: left;
 }
 
 .sc-item-two-c .sc-right {
-  margin-left:5.5em;
+  margin-left: 5.5em;
 }
 
-.sc-item-two-c .sc-right input{
-  background-color:#fff;
-  color:#f582a1;
-  width:100%;
-  height:auto;
+.sc-item-two-c .sc-right input {
+  background-color: #fff;
+  color: #f582a1;
+  width: 100%;
+  height: auto;
 }
 
-.sc-item-two-c .sc-right img{
-  width:4em;
+.sc-item-two-c .sc-right img {
+  width: 4em;
 }
-.sc-block-pink{
+
+.sc-block-pink {
   background-color: #f582a1;
-  padding:0.2em 0.5em;
-  display:inline;
+  padding: 0.2em 0.5em;
+  display: inline;
   border-radius: 0.2em;
-  color:#fff;
+  color: #fff;
 }
+
 .sc-grey {
   color: #d0d0d0;;
 }
-.sc-icon-font{
-  color:#f582a1;
-  font-size:1.5em;
+
+.sc-icon-font {
+  color: #f582a1;
+  font-size: 1.5em;
 }
