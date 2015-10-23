@@ -8699,7 +8699,7 @@ input:checked + .checkbox-icon:after {
 
 .item-checkbox {
   padding-left: 45px;
-  /**/
+  /* org: ($item-padding * 2) + $checkbox-width*/
 }
 .item-checkbox.active {
   box-shadow: none;

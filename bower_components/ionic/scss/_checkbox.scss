@@ -147,7 +147,7 @@ input:checked + .checkbox-icon:after {
 
 // make sure item content have enough padding on left to fit the checkbox
 .item-checkbox {
-  padding-left: ($item-padding * 2) + $checkbox-width - 15; /**/
+  padding-left: ($item-padding * 2) + $checkbox-width - 15; /* org: ($item-padding * 2) + $checkbox-width*/
 
   &.active {
     box-shadow: none;
