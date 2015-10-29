@@ -3,16 +3,19 @@
     我的智慧花园
   </ion-nav-title>
   <ion-content class="stable-bg">
-    <div class="bar bar-header item-input-inset royal-bg">
+    <div class="bar bar-header item-input-inset calm-bg">
       <label class="item-input-wrapper">
         <i class="icon ion-ios-search"></i>
         <input type="search" placeholder="把关键字放在这里搜搜看" ng-model="searchData.kw">
       </label>
     </div>
     <div>
-      <div class="mg-center-bg">
+      <div class="mg-sign-in">
+        <img src="images/1-0flower_07.png" ng-click="signIn()">
+      </div>
+      <div class="mg-center-bg" ng-click="showMyProfile()">
         <div class="mg-center-img">
-          <img src="./images/index-avd.jpg">
+          <img src="./images/1-0flower_20.png">
         </div>
         <div class="mg-center-name">爱丽丝</div>
         <div class="mg-center-id">ID:666666</div>
@@ -38,11 +41,11 @@
       </div>
     </div>
     <div class="card-box stable-bg">
-      <a class="button light-bg button-block royal" ng-click="addnew()">
-        <i class="ion-ios-plus-outline"></i>
+      <a class="button light-bg button-block royal sc-big-size" ng-click="addnew()">
+        <i class="ion-android-add"></i>
         添加新植物
       </a>
     </div>
-    <home-menu/>
+    <home-menu my-id="100"/>
   </ion-content>
 </ion-view>

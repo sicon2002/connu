@@ -79,30 +79,77 @@ angular.module('starter.controllers', [])
   .controller('MyGardenCtrl', function ($scope, $state, MemberService) {
 
     MemberService.get(1).success(function (response) {
-      console.log(response);
+      // console.log(response);
       $scope.myplants = response;
     });
 
     $scope.loginData = {"username": "sicon", "password": "pwd"};
     $scope.searchData = {"kw": ""};
-    console.log("after init.");
+    //console.log("after init.");
 
     $scope.addnew = function () {
       console.log("before go to plant add");
       $state.go("app.plantadd", {}, {reload: false});
       console.log("after go to plant add");
     };
+
+    $scope.signIn = function () {
+      alert("you've signed in!");
+    };
+
+    $scope.showMyProfile = function(){
+      $state.go("app.profile");
+    };
   })
 
 
   .controller('PlantCtrl', function ($scope, $stateParams) {
-    console.log("you are inside plant ctrl");
+
+    $scope.showGraphic = function () {
+      console.log("you are in plant control:" + $stateParams.playlistId);
+
+      var lineChartData = {
+        labels: ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"],
+        datasets: [
+          {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [45, 33, 48, 56, 59, 51, 69]
+          }
+        ]
+      }
+
+      var ctx = document.getElementById("canvas").getContext("2d");
+      var myLine = new Chart(ctx).Line(lineChartData, {
+        responsive: true
+      });
+      ctx = document.getElementById("canvas1").getContext("2d");
+      myLine = new Chart(ctx).Line(lineChartData, {
+        responsive: true
+      });
+      ctx = document.getElementById("canvas2").getContext("2d");
+      myLine = new Chart(ctx).Line(lineChartData, {
+        responsive: true
+      });
+    };
+
+    $scope.showGraphic();
+
+  })
+
+  .controller('MyProfileCtrl', function($scope){
+
   })
 
   .controller('PlantAddCtrl', function ($scope) {
     $scope.Plant = {
       'Name': '带斑点的小花',
-      'CtgId':102,
-      'CtgName':'百合科－芦荟属－多叶芦荟'
+      'CtgId': 102,
+      'CtgName': '百合科－芦荟属－多叶芦荟'
     };
   });

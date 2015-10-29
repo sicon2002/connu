@@ -68,6 +68,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           }
         }
       })
+      .state('app.profile', {
+        url: '/profile',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/my/profile.html',
+            controller:'MyProfileCtrl'
+          }
+        }
+      })
       .state('app.plants', {
         url: '/plants/:playlistId',
         views: {

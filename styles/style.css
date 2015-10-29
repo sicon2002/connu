@@ -1,6 +1,10 @@
 /* Empty. Add your own CSS if you like */
 
 /* new ui goes here.*/
+
+/* @color:#f9bdc9 */
+/* @color:#f582a1 */
+
 html {
   font-size: 100%;
 }
@@ -20,6 +24,10 @@ body {
 .sm-right {
 }
 
+.sc-big-size {
+  font-size: 1.5em;
+}
+
 .sm-checkbox-small {
   padding: 0;
   margin: 0;
@@ -29,6 +37,17 @@ body {
 
 .sc-border-none {
   border: none;
+}
+
+/* mygarden */
+.mg-sign-in {
+  position: fixed;
+  top: 3.5em;
+  right: 0.5em;
+}
+
+.mg-sign-in img {
+  width: 6em;
 }
 
 .mg-center-bg {
@@ -46,6 +65,7 @@ body {
 .mg-center-bg img {
   margin-top: 0.75em;
   width: 5em;
+  height: 5em;
   border-radius: 2.5em;
 }
 
@@ -79,6 +99,7 @@ body {
 .mg-plant-list .mg-plant-cell {
   border-radius: 0.2em;
   padding-bottom: 1.5em;
+  border: solid 1px #ddd;
 }
 
 .mg-plant-list .index-p-left {
@@ -99,29 +120,37 @@ body {
   margin: 10px;
 }
 
-.homemenu {
+.home-menu {
   position: fixed;
-  top: 25.4em;
+  top: 75%;
   right: 0.5em;
-
-  border: solid 1px #ff0000;
+  z-index: 9999;
 }
 
-.homemenu div {
-  #border: solid 1px #ff0ff0;
+.home-menu div {
+  z-index: 9999;
 }
 
-.homemenu .home-icon {
+.home-menu .home-icon {
   position: absolute;
   top: 0em;
   right: 0em;
-}
-
-.homemenu .home-icon img {
   width: 5em;
+  height: 5em;
+  background: url(../images/home.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 5em;
+  z-index: 9999;
 }
 
-.homemenu .home-icon-item {
+.home-menu .home-icon img {
+  width: 5em;
+  z-index: 9999;
+}
+
+.home-menu .home-icon-item {
   position: absolute;
   display: none;
   top: 0em;
@@ -133,11 +162,14 @@ body {
   background: url(../images/menu-item.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding:1.1em 1.3em;
+  #padding: 1.1em 1.3em;
+  text-align: center;
+  line-height: 5em;
   opacity: 0;
+  z-index: 9999;
 }
 
-.homemenu .home-icon-item img {
+.home-menu .home-icon-item img {
   width: 3em;
 }
 
@@ -150,6 +182,14 @@ body {
   padding: 0px;
 }
 
+.sc-item-two-diary {
+  padding: 0em;
+  background-image: url(../images/dot3.png);
+  background-repeat: repeat-y;
+  background-position: 5em 0;
+  background-color: #fff5f6;
+}
+
 .sc-item-two-c {
   width: 100%;
   margin: 0 0 0.1em 0;
@@ -158,14 +198,95 @@ body {
   border-bottom: solid 0.07em #f9bdc9;
 }
 
+.sc-item-two-c div {
+  #border: solid 0.07em #f9bdc9;
+}
+
 .sc-item-two-c .sc-left {
   margin-top: 0em;
   width: 5em;
   float: left;
 }
 
+.sc-item-two-c .sc-left-avd {
+  padding: 0.05em;
+}
+
+.sc-item-two-c .sc-left-avd img {
+  width: 3em;
+  border-radius: 0.3em;
+}
+
 .sc-item-two-c .sc-right {
   margin-left: 5.5em;
+}
+
+.sc-item-two-c .sc-right .sc-right-icon {
+  float: left;
+}
+
+.sc-item-two-c .sc-right .sc-right-icon img {
+  width: 1em;
+  margin-left: -2.3em;
+}
+
+.sc-item-two-c .sc-right .sc-right-up {
+  margin: 0.05em 0.05em 0.05em 0.7em;
+}
+
+.sc-item-two-c .sc-right .sc-right-middle {
+  margin-top: -0.7em;
+}
+
+.sc-item-two-c .sc-right .sc-right-middle .sc-right-middle-content {
+  background-color: #fff;
+  border-radius: 0.3em;
+  padding: 0.5em;
+  white-space: normal;
+
+}
+
+.sc-item-two-c .sc-right .sc-right-middle .uparr {
+  width: 0;
+  height: 0;
+  border: solid 0.8em #fff5f6;
+  border-color: transparent transparent #fff transparent;
+
+  position: relative;
+  left: 1em;
+
+  z-index: -1;
+}
+
+.sc-item-two-c .sc-right .sc-right-down {
+  margin: 0.5em 0.05em 0.05em 0.05em;
+}
+
+.sc-item-two-c .sc-right .sc-right-down .sc-right-big-img {
+  border-radius: 0.3em;
+  width: 100%;
+}
+
+.sc-item-two-c .sc-right .sc-right-down .sc-right-down-voice {
+  background-image: url(../images/voice-3.png), url(../images/voice-bg-all.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 2em 1.5em, 9em 2em;
+  background-position: 9.5em 0.25em, 2.5em 0em;
+  padding: 0em;
+  border: solid 1px transparent;
+  width: 20em;
+  height: 2.1em;
+}
+
+.sc-item-two-c .sc-right .sc-right-down .sc-right-down-voice img {
+  width: 2em;
+  float: left;
+}
+
+.sc-item-two-c .sc-right .sc-right-down .sc-right-down-voice div {
+  #border: solid 1px #0000FF;
+  margin: 0.35em auto auto 3.5em;
+  color: #fff;
 }
 
 .sc-item-two-c .sc-right input {
@@ -194,4 +315,158 @@ body {
 .sc-icon-font {
   color: #f582a1;
   font-size: 1.5em;
+}
+
+/* plant */
+.plt-center-bg {
+  width: 100%;
+  height: 9em;
+  background-image: url(../images/1-0flower_13.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.plt-center-bg .plt-avd {
+  padding: 0.1em;
+  padding-top: 4em;
+}
+
+.plt-center-bg .plt-avd .plt-left {
+  float: left;
+}
+
+.plt-center-bg .plt-avd .plt-right {
+  margin-left: 5.5em;
+  margin-top: 2.5em;
+}
+
+.plt-center-bg div {
+  #border: solid 1px #ff0000;
+}
+
+.plt-center-bg img {
+  margin-top: 0.75em;
+  width: 5em;
+  height: 5em;
+  border-radius: 2.5em;
+  border: solid 0.1em #fff;
+}
+
+.plt-center-bg .plt-bl-name {
+  color: #111;
+  font-size: 1em;
+}
+
+.plt-center-bg .plt-bl-id {
+  color: #222;
+  font-size: 0.75em;
+}
+
+.plt-diagram-box {
+  width: 100%;
+  margin: 0 0 0.1em 0;
+  padding: 1em 0.6em;
+  border-top: none;
+  border-bottom: solid 0.07em #f9bdc9;
+}
+
+.plt-diagram-box div {
+  #border: solid 1px #FF9999;
+  padding: 2px;
+}
+
+.plt-diagram-box .plt-dgm-item {
+  background-image: url(../images/sun-@3x.png), url(../images/tuijian@3x.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1.7em, 1.7em;
+  background-position: 0em 0.1em, 70% 0.1em;
+}
+
+.plt-diagram-box .plt-dgm-item div {
+  #border: solid 1px #0f0;
+}
+
+canvas {
+  #border: solid 1px #00f;
+}
+
+.plt-diagram-box .plt-dgm-item .plt-dgm-left {
+  padding-left: 1.3em;
+  font-size: 1.2em;
+  float: left;
+}
+
+.plt-diagram-box .plt-dgm-item .plt-dgm-right {
+  margin-left: 70%;
+  padding-left: 0.4em;
+}
+
+.plt-diagram-box .plt-dgm-item .plt-dgm-left i,
+.plt-diagram-box .plt-dgm-item .plt-dgm-right i {
+  color: #f582a1;
+}
+
+.plt-diagram-box .plt-dgm-title {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.plt-diagram-box .plt-dgm-diagram {
+  width: 100%;
+  padding: 0em 1em;
+}
+
+.plt-diagram-box .plt-dgm-diagram .plt-dgm-diagram-canvas {
+}
+
+.plt-diagram-box .plt-dgm-tips {
+  padding-left: 3em;
+  background-image: url(../images/smile@3x.png);
+  background-repeat: no-repeat;
+  background-size: 1.7em;
+  background-position: 1em -0.2em;
+}
+
+.plt-diagram-box .plt-dgm-tips .plt-dgm-tips-font {
+  #background: #000;
+  padding: 0.1em 0.5em;
+  display: inline;
+  border: none;
+  border-radius: 0.5em;
+  color: #f582a1;
+}
+
+/* profile */
+#pf-icon {
+  border: solid 1px #FF9999;
+  height:5.5em;
+}
+
+#pf-icon img {
+  width:3.5em;
+  height: 3.5em;
+  max-height: 10em;
+  max-width: 10em;
+}
+
+#pf-icon h2 {
+  margin:0.8em auto auto 0.5em;
+  font-size:1.2em;
+}
+
+#pf-icon p {
+  display: none;
+}
+
+#pf-icon i {
+}
+
+.pf-divider{
+  padding:0.2em;
+  height: 0.8em;
+  min-height: 0.8em;
+}
+
+.pf-list .item{
+  border-bottom: solid 1px #f9bdc9;
 }
