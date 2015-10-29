@@ -25,7 +25,7 @@ body {
 }
 
 .sc-big-size {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .sm-checkbox-small {
@@ -37,6 +37,31 @@ body {
 
 .sc-border-none {
   border: none;
+}
+
+/* my icons , should be sprited */
+.cion-message:before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-image: url(../images/sun-@3x.png);
+  background-size: 1em 1em;
+}
+
+.cion-suggestion:before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-image: url(../images/water@3x.png);
+  background-size: 1em 1em;
+}
+
+.cion-version:before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-image: url(../images/smile@3x.png);
+  background-size: 1em 1em;
 }
 
 /* mygarden */
@@ -117,7 +142,7 @@ body {
 }
 
 .card-box {
-  margin: 10px;
+  margin: 2em;
 }
 
 .home-menu {
@@ -439,19 +464,19 @@ canvas {
 /* profile */
 #pf-icon {
   border: solid 1px #FF9999;
-  height:5.5em;
+  height: 5.5em;
 }
 
 #pf-icon img {
-  width:3.5em;
+  width: 3.5em;
   height: 3.5em;
   max-height: 10em;
   max-width: 10em;
 }
 
 #pf-icon h2 {
-  margin:0.8em auto auto 0.5em;
-  font-size:1.2em;
+  margin: 0.8em auto auto 0.5em;
+  font-size: 1.2em;
 }
 
 #pf-icon p {
@@ -461,12 +486,39 @@ canvas {
 #pf-icon i {
 }
 
-.pf-divider{
-  padding:0.2em;
+.pf-divider {
+  padding: 0.2em;
   height: 0.8em;
   min-height: 0.8em;
 }
 
-.pf-list .item{
+.pf-list .item {
   border-bottom: solid 1px #f9bdc9;
+}
+
+/* account */
+.act-list{
+  #border: solid 1px #dd1144;
+}
+
+.act-list .item{
+  border-bottom: solid 0.1em #f9bdc9;
+}
+
+.act-list h2 {
+  font-size: 1.2em;
+  display: inline-block;
+}
+.act-list h3 {
+  font-size: 1.1em;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.act-list .act-avd img{
+  width:4em;
+}
+
+.act-list .act-item-font{
+  font-size:1em;
 }

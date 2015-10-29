@@ -146,6 +146,10 @@ angular.module('starter.controllers', [])
 
   })
 
+  .controller('AccountCtrl', function($scope){
+
+  })
+
   .controller('PlantAddCtrl', function ($scope) {
     $scope.Plant = {
       'Name': '带斑点的小花',
