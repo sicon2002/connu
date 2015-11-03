@@ -103,7 +103,7 @@ angular.module('starter.controllers', [])
   })
 
 
-  .controller('PlantCtrl', function ($scope, $stateParams) {
+  .controller('PlantCtrl', function ($scope, $state, $stateParams) {
 
     $scope.showGraphic = function () {
       console.log("you are in plant control:" + $stateParams.playlistId);
@@ -140,6 +140,10 @@ angular.module('starter.controllers', [])
 
     $scope.showGraphic();
 
+    $scope.helloyou = function(){
+      $state.go('app.diary');
+    };
+
   })
 
   .controller('MyProfileCtrl', function($scope){
@@ -148,6 +152,10 @@ angular.module('starter.controllers', [])
 
   .controller('AccountCtrl', function($scope){
 
+  })
+
+  .controller('KeepANoteCtrl', function($scope){
+    alert(1);
   })
 
   .controller('PlantAddCtrl', function ($scope) {

@@ -20,6 +20,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         // org.apache.cordova.statusbar required
         StatusBar.styleDefault();
       }
+      // navigator.splashscreen.hide();
     });
   })
 
@@ -42,6 +43,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       })
 
+      .state('app.keepanote', {
+        url: '/keepanote',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/diary/keepanote.html',
+            controller: 'KeepANoteCtrl'
+          }
+        }
+      })
       .state('app.plantlibs', {
         url: '/plantlibs',
         views: {
@@ -64,7 +74,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         views: {
           'menuContent': {
             templateUrl: 'templates/mygarden/plantadd.html',
-            controller:'PlantAddCtrl'
+            controller: 'PlantAddCtrl'
           }
         }
       })
@@ -73,7 +83,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         views: {
           'menuContent': {
             templateUrl: 'templates/my/profile.html',
-            controller:'MyProfileCtrl'
+            controller: 'MyProfileCtrl'
           }
         }
       })
@@ -82,10 +92,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         views: {
           'menuContent': {
             templateUrl: 'templates/my/account.html',
-            controller:'AccountCtrl'
+            controller: 'AccountCtrl'
           }
         }
       })
+
       .state('app.plants', {
         url: '/plants/:playlistId',
         views: {

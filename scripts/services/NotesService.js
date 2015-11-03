@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('starter.services',[]).factory('MemberService', function($http) {
+angular.module('starter.services',[]).factory('NotesService', function($http) {
   return {
     all: function() {
       return $http({

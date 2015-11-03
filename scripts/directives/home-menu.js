@@ -59,7 +59,7 @@ app.directive('homeMenu', function ($state) {
         } else {
           $(itemGarden + "," + itemNotes + "," + itemPlants + "," + itemSettings).animate({
             opacity: 0, top: "0em", right: "0em"
-          }, speed * 3 / 5, "swing").fadeOut();
+          }, speed * 4 / 5, "swing").fadeOut();
         }
       };
 
