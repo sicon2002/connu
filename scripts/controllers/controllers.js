@@ -140,7 +140,7 @@ angular.module('starter.controllers', [])
 
     $scope.showGraphic();
 
-    $scope.helloyou = function(){
+    $scope.go2mynotes = function(){
       $state.go('app.diary');
     };
 
@@ -155,7 +155,15 @@ angular.module('starter.controllers', [])
   })
 
   .controller('KeepANoteCtrl', function($scope){
-    alert(1);
+    $scope.submit = function(){
+      alert('别急～～');
+    }
+  })
+
+  .controller('DiaryCtrl', function($scope, $state){
+    $scope.go2keepanote = function () {
+      $state.go("app.keepanote");
+    }
   })
 
   .controller('PlantAddCtrl', function ($scope) {

@@ -38,7 +38,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         url: '/diary',
         views: {
           'menuContent': {
-            templateUrl: 'templates/diary/diary.html'
+            templateUrl: 'templates/diary/diary.html',
+            controller: 'DiaryCtrl'
           }
         }
       })

@@ -39,6 +39,64 @@ body {
   border: none;
 }
 
+.img-size-1{
+  width:1em;
+  height:1em;
+}
+
+.img-size-1d5{
+  width:1.5em;
+  height:1.5em;
+}
+
+.img-size-2{
+  width:2em;
+  height:2em;
+}
+
+.img-size-3{
+  width:3em;
+  height:3em;
+}
+
+.img-size-4{
+  width:4em;
+  height:4em;
+}
+
+.img-size-5{
+  width:5em;
+  height:5em;
+}
+
+.img-size-6{
+  width:6em;
+  height:6em;
+}
+
+.item-margin-1 {
+  margin-top:1em;
+}
+
+.item-bottom-line{
+  border-bottom:solid 1px #f9bdc9;
+  #margin-bottom: 0.05em;
+}
+
+.item-center{
+  height:5em;
+  line-height:5em;
+  overflow:hidden;
+}
+
+.div-debug{
+  border: solid 1px #000066;
+}
+
+.div-debug div{
+  border: solid 1px #a00096;
+}
+
 /* my icons , should be sprited */
 .cion-message:before {
   content: "";
@@ -521,4 +579,14 @@ canvas {
 
 .act-list .act-item-font{
   font-size:1em;
+}
+
+/* keep a note */
+.kan-list div{
+  #border:solid 1px #6699aa;
+}
+
+.kan-list textarea{
+  width:100%;
+  height:10em;
 }
