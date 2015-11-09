@@ -10,7 +10,7 @@ angular.module('starter.services', []).factory('PlantService', function ($http) 
 
     all: function () {
       return $http({
-        url: './scripts/services/data/members.json',
+        url: SYS.PlantQueryAll,
         method: 'GET'
       });
     },

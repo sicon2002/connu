@@ -4,7 +4,7 @@ angular.module('starter.services',[]).factory('MemberService', function($http) {
   return {
     all: function() {
       return $http({
-        url: './scripts/services/data/members.json',
+        url: AppCfg.UserQueryAll,
         method: 'GET'
       });
     },

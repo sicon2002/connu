@@ -2,8 +2,7 @@
 
 angular.module('starter.controllers', [])
 
-  .filter('inSlicesOf',
-  ['$rootScope',
+  .filter('inSlicesOf', ['$rootScope',
     function ($rootScope) {
       var makeSlices = function (items, count) {
         if (!count) {
@@ -33,7 +32,7 @@ angular.module('starter.controllers', [])
     }]
 )
 
-  .controller('AppCtrl', function ($scope, $ionicModal, $timeout) {
+  .controller('AppCtrl', function ($scope, $state, $ionicModal, $timeout) {
 
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
@@ -41,6 +40,16 @@ angular.module('starter.controllers', [])
     // listen for the $ionicView.enter event:
     //$scope.$on('$ionicView.enter', function(e) {
     //});
+
+    /*
+    var getUserObj = function(){
+      return {"ID":"1001","Name":"Sicon"};
+    };
+
+    if(getUserObj() != null){
+      $state.go("app.plantadd");
+    }
+    */
 
     // Form data for the login modal
     $scope.loginData = {};
@@ -76,9 +85,13 @@ angular.module('starter.controllers', [])
     $scope.loginData = {"username": "sicon", "password": "pwd"};
   })
 
-  .controller('MyGardenCtrl', function ($scope, $state, MemberService) {
+  .controller('MyGardenCtrl', function ($scope, $state, PlantService) {
 
-    MemberService.get(1).success(function (response) {
+
+
+    testFun();
+
+    PlantService.all().success(function (response) {
       // console.log(response);
       $scope.myplants = response;
     });
